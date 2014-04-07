@@ -32,7 +32,7 @@ namespace Acme.Web.Controllers
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
         {
-            ViewBag.ReturnUrl = returnUrl;
+            ViewBag.ReturnUrl = returnUr;
             return View();
         }
 
