@@ -33,7 +33,6 @@ namespace Acme.Web.Controllers
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
-            // Just some comments.  Login not REALLY working.
             return View();
         }
 
