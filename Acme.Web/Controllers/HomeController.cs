@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Acme.Web.Models;
 
 namespace Acme.Web.Controllers
 {
@@ -10,7 +11,11 @@ namespace Acme.Web.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var model = new SuperComplexModel();
+            model.FirstName = "Foo";
+            model.LastName = "Bar";
+
+            return View(model);
         }
 
         public ActionResult About()

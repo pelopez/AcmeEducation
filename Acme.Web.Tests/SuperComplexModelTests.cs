@@ -20,5 +20,27 @@ namespace Acme.Web.Tests
 
             Assert.AreEqual(expected, model.FullName);
         }
+
+        [Test]
+        public void PerformComplexAddition_When_Given_2_and_2_Returns_4()
+        {
+            var theFirstNum = 2;
+            var theSecondNum = 2;
+
+            var expected = 4;
+
+            Assert.AreEqual(expected, SuperComplexModel.PerformComplexAddition(theFirstNum, theSecondNum));
+        }
+
+        //[Test]
+        //public void PerformComplexAddition_When_Given_3_and_3_Returns_6()
+        //{
+        //    var theFirstNum = 3;
+        //    var theSecondNum = 3;
+
+        //    var expected = 6;
+
+        //    Assert.AreEqual(expected, SuperComplexModel.PerformComplexAddition(theFirstNum, theSecondNum));
+        //}
     }
 }
