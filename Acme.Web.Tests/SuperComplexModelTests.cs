@@ -11,15 +11,15 @@ namespace Acme.Web.Tests
     [TestFixture]
     public class SuperComplexModelTests
     {
-        [Test]
-        public void FullName_Returns_FirstName_And_LastName_Properly_Spaced()
-        {
-            var model = new SuperComplexModel {FirstName = "Pete", LastName = "Lopez"};
+        //[Test]
+        //public void FullName_Returns_FirstName_And_LastName_Properly_Spaced()
+        //{
+        //    var model = new SuperComplexModel {FirstName = "Pete", LastName = "Lopez"};
 
-            var expected = "Pete Lopez";
+        //    var expected = "Pete Lopez";
 
-            Assert.AreEqual(expected, model.FullName);
-        }
+        //    Assert.AreEqual(expected, model.FullName);
+        //}
 
         [Test]
         public void PerformComplexAddition_When_Given_2_and_2_Returns_4()
