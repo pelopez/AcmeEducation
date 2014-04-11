@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Acme.Web.Models;
 using System.Web.Mvc;
-using Acme.Web.Models;
 
 namespace Acme.Web.Controllers
 {
@@ -11,9 +7,11 @@ namespace Acme.Web.Controllers
     {
         public ActionResult Index()
         {
-            var model = new SuperComplexModel();
-            model.FirstName = "Foo";
-            model.LastName = "Bar";
+            var model = new SuperComplexModel
+            {
+                FirstName = "Foo", 
+                LastName = "Bar"
+            };
 
             return View(model);
         }
