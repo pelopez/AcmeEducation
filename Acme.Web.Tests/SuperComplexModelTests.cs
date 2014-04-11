@@ -32,7 +32,7 @@ namespace Acme.Web.Tests
             Assert.AreEqual(expected, SuperComplexModel.PerformComplexAddition(theFirstNum, theSecondNum));
         }
 
-        [Test]
+        [Test, Ignore("Testing continuous integration")]
         public void PerformComplexAddition_When_Given_3_and_3_Returns_6()
         {
             var theFirstNum = 3;
