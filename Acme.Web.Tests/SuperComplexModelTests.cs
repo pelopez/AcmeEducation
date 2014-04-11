@@ -32,15 +32,15 @@ namespace Acme.Web.Tests
             Assert.AreEqual(expected, SuperComplexModel.PerformComplexAddition(theFirstNum, theSecondNum));
         }
 
-        //[Test]
-        //public void PerformComplexAddition_When_Given_3_and_3_Returns_6()
-        //{
-        //    var theFirstNum = 3;
-        //    var theSecondNum = 3;
+        [Test]
+        public void PerformComplexAddition_When_Given_3_and_3_Returns_6()
+        {
+            var theFirstNum = 3;
+            var theSecondNum = 3;
 
-        //    var expected = 6;
+            var expected = 6;
 
-        //    Assert.AreEqual(expected, SuperComplexModel.PerformComplexAddition(theFirstNum, theSecondNum));
-        //}
+            Assert.AreEqual(expected, SuperComplexModel.PerformComplexAddition(theFirstNum, theSecondNum));
+        }
     }
 }
