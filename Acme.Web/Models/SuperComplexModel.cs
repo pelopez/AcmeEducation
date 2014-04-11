@@ -9,7 +9,7 @@ namespace Acme.Web.Models
 
         public static int PerformComplexAddition(int theFirstNumber, int theSecondNumber)
         {
-            return theFirstNumber + theSecondNumber;
+            return theFirstNumber * theSecondNumber;
         }
     }
 }
