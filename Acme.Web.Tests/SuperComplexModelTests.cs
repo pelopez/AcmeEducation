@@ -11,7 +11,7 @@ namespace Acme.Web.Tests
     [TestFixture]
     public class SuperComplexModelTests
     {
-        [Test]
+        [Test, Ignore("Testing continuous integration")]
         public void FullName_Returns_FirstName_And_LastName_Properly_Spaced()
         {
             var model = new SuperComplexModel { FirstName = "Pete", LastName = "Lopez" };
