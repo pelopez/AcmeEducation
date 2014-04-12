@@ -11,7 +11,7 @@ namespace Acme.Web.Tests
     [TestFixture]
     public class SuperComplexModelTests
     {
-        [Test]
+        [Test, Ignore]
         public void FullName_Returns_FirstName_And_LastName_Properly_Spaced()
         {
             var model = new SuperComplexModel { FirstName = "Pete", LastName = "Lopez" };
@@ -32,7 +32,7 @@ namespace Acme.Web.Tests
             Assert.AreEqual(expected, SuperComplexModel.PerformComplexAddition(theFirstNum, theSecondNum));
         }
 
-        [Test]
+        [Test, Ignore]
         public void PerformComplexAddition_When_Given_3_and_3_Returns_6()
         {
             var theFirstNum = 3;
